@@ -1,0 +1,16 @@
+h1, h3 {
+    text-align: center;
+}
+
+.blockform {
+    margin-left: 150px;
+    margin-top: 40px;
+    width: 800px;
+    min-height: 150px;
+    border: 2px solid red;
+    padding: 10px;
+}
+
+.checkline1 {
+    margin-left: 10px;
+}
