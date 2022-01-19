@@ -14,3 +14,11 @@ h1, h3 {
 .checkline1 {
     margin-left: 10px;
 }
+
+.checkbox1 {
+    margin: 2px;
+}
+
+.checkline1:hover > .checkbox1 {
+    background-color: black;
+}
