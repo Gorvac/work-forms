@@ -5,20 +5,61 @@ h1, h3 {
 .blockform {
     margin-left: 150px;
     margin-top: 40px;
-    width: 800px;
-    min-height: 150px;
+    width: 900px;
+    min-height: 200px;
     border: 2px solid red;
     padding: 10px;
 }
 
 .checkline1 {
     margin-left: 10px;
+    margin-bottom: 5px;
 }
 
 .checkbox1 {
-    margin: 2px;
+    display: none;
 }
 
-.checkline1:hover > .checkbox1 {
-    background-color: black;
+.fake-radio1 {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 4px;
+    border-radius: 50%;
+    border: 1px solid #757575;
+    position: relative;
+}
+
+.fake-radio1::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #0075FF;
+    opacity: 0;
+}
+
+.checkbox1:checked + .fake-radio1::before {
+    opacity: 1;
+}
+
+.checkline1:hover .fake-radio1 {
+    background-color: #C6C6C6;
+    box-shadow: 0 0 0 5px rgba(211, 211, 211, 1);
+}
+
+.checkbox1:checked + .fake-radio1 {
+    border: 1px solid #0075FF;
+}
+
+/*Part 2*/
+
+.slider {
+    margin-top: 70px;
+    margin-left: 40px;
 }
