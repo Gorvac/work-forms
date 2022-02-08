@@ -63,3 +63,13 @@ h1, h3 {
     margin-top: 70px;
     margin-left: 40px;
 }
+
+#fader {
+    width: 500px;
+    height: 2px;
+}
+
+#volume-fader {
+    position: absolute;
+    background-color: red;
+}
