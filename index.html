@@ -41,10 +41,13 @@
     <h3>Работа с CHECKBOX range</h3>
     <div class="blockform">
         <div class="slider">
-            <output for="fader" id="volume-fader">49</output>
-            <input type="range" id="fader" min="0" max="100" value="49" step="1">
+            <div class="block-value">
+                <output for="fader" id="value-fader">49</output>
+            </div>
+            <input type="range" id="fader" min="0" max="100" value="49" step="1" oninput="outputUpdate(value)">
         </div>
     </div>
     
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -69,7 +69,23 @@ h1, h3 {
     height: 2px;
 }
 
-#volume-fader {
-    position: absolute;
+#fader::-webkit-slider-thumb {
+    -webkit-appearance: none; /*Почему не работает??? О_о*/
+}
+
+.block-value {
+    display: block;
+    width: 30px;
+    height: 30px;
     background-color: red;
+    transform: rotate(-135deg);
+    border-radius: 0 50% 50% 50%;
+}
+
+#value-fader {
+    display: inline-block;
+    transform: rotate(135deg);
+    position: relative;
+    top: 5px;
+    left: 5px;
 }
