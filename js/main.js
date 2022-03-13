@@ -3,10 +3,20 @@ var slider = document.getElementById("fader");
 var val = document.getElementById("value-fader");
 slider.oninput=function(){
     val.innerHTML=this.value;
-}*/
+}
 
 function outputUpdate(vol){
     var output = document.querySelector('#value-fader');
     output.value = vol;
     output.style.left = vol - 20 + 'px';
+}*/
+
+function outputUpdate(vol){
+    var output = document.querySelector('#value-fader');
+    var outputValue = document.querySelector('#value-fader-value');
+    outputValue.innerHTML = vol;
+    output.style.left = vol*5 + 'px';
+    outputValue.style.left = vol*5 + 'px';
+    console.log(vol)
 }
+outputUpdate(49)
