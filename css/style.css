@@ -172,4 +172,5 @@ h1, h3 {
 
 .switch1:checked::before {
     left: 60px;
+    background-color: #000fff;
 }
