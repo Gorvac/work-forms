@@ -6,7 +6,7 @@ h1, h3 {
     margin-left: 150px;
     margin-top: 40px;
     width: 900px;
-    min-height: 300px;
+    min-height: 400px;
     border: 2px solid red;
     padding: 10px;
 }
@@ -173,4 +173,68 @@ h1, h3 {
 .switch1:checked::before {
     left: 60px;
     background-color: #000fff;
+}
+
+/* Part 6*/
+
+.list1 {
+    width: 400px;
+}
+
+.list1-start {
+    position: relative;
+    width: 400px;
+    height: 30px;
+    border: 1px solid black;
+    padding-left: 15px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.list1-start::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 5px 0 5px;
+    border-color: #000000 transparent transparent transparent;
+    pointer-events: none;
+}
+
+.list1-end {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+}
+
+.list1-item {
+    width: 400px;
+    height: 30px;
+    background-color: wheat;
+    border: 1px solid black;
+    border-top: none;
+    padding-left: 15px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.list1-item:hover {
+    background-color: #C6C6C6;
+}
+
+.list1-item:active {
+    background-color: brown;
+}
+
+.list1-end-visual {
+    display: block;
+}
+
+.list1-input {
+    background-color: white;
+    /*display: none;*/
 }

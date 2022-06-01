@@ -19,4 +19,14 @@ function outputUpdate(vol){
     outputValue.style.left = vol*5 + 'px';
     console.log(vol)
 }
-outputUpdate(49)
+outputUpdate(49);
+
+document.querySelector('.list1-start').addEventListener('click', function () {
+    document.querySelector('.list1-end').classList.toggle('list1-end-visual');
+});
+
+document.querySelectorAll('.list1-item').forEach(function(listItem) {
+    listItem.addEventListener('click', function() {
+        document.querySelector('.list1-start').innerText = this.innerText;
+    })
+});
