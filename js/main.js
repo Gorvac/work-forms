@@ -32,7 +32,12 @@ document.querySelectorAll('.list1-item').forEach(function(listItem) {
     });
 });
 
-
 document.querySelector('.list2-start').addEventListener('click', function () {
     document.querySelector('.list2-end').classList.toggle('list1-end-visual');
+});
+
+document.querySelectorAll('.list2-item').forEach(function(listItem) {
+    listItem.addEventListener('click', function () {
+        document.querySelector('.list2-start').innerText = document.querySelector('.list2-start') + this.innerText;
+    });
 });

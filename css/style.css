@@ -230,9 +230,6 @@ h1, h3 {
     background-color: brown;
 }
 
-.list1-end-visual {
-    display: block;
-}
 
 /*Part 7*/
 
@@ -276,4 +273,8 @@ h1, h3 {
     padding-left: 15px;
     padding-top: 10px;
     cursor: pointer;
+}
+
+.list1-end-visual {
+    display: block;
 }
