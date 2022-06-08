@@ -226,7 +226,7 @@ h1, h3 {
     background-color: #C6C6C6;
 }
 
-.list1-item:active {
+.list1-item-activ {
     background-color: brown;
 }
 
@@ -234,7 +234,46 @@ h1, h3 {
     display: block;
 }
 
-.list1-input {
-    background-color: white;
-    /*display: none;*/
+/*Part 7*/
+
+.list2-start {
+    position: relative;
+    width: 400px;
+    height: 30px;
+    border: 1px solid black;
+    padding-left: 15px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.list2-start::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 5px 0 5px;
+    border-color: #000000 transparent transparent transparent;
+    pointer-events: none;
+}
+
+.list2-end {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+}
+
+.list2-item {
+    display: block;
+    width: 400px;
+    height: 30px;
+    background-color: wheat;
+    border: 1px solid black;
+    border-top: none;
+    padding-left: 15px;
+    padding-top: 10px;
+    cursor: pointer;
 }

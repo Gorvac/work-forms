@@ -28,5 +28,11 @@ document.querySelector('.list1-start').addEventListener('click', function () {
 document.querySelectorAll('.list1-item').forEach(function(listItem) {
     listItem.addEventListener('click', function() {
         document.querySelector('.list1-start').innerText = this.innerText;
-    })
+        document.querySelector('.list1-end').classList.remove('list1-end-visual');
+    });
+});
+
+
+document.querySelector('.list2-start').addEventListener('click', function () {
+    document.querySelector('.list2-end').classList.toggle('list1-end-visual');
 });
