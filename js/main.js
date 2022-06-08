@@ -38,6 +38,6 @@ document.querySelector('.list2-start').addEventListener('click', function () {
 
 document.querySelectorAll('.list2-item').forEach(function(listItem) {
     listItem.addEventListener('click', function () {
-        document.querySelector('.list2-start').innerText = document.querySelector('.list2-start') + this.innerText;
+        document.querySelector('.list2-start').innerText = document.querySelector('.list2-start').innerText + this.innerText;
     });
 });
