@@ -37,7 +37,19 @@ document.querySelector('.list2-start').addEventListener('click', function () {
 });
 
 document.querySelectorAll('.list2-item').forEach(function(listItem) {
-    listItem.addEventListener('click', function () {
+    listItem.addEventListener('onclick', function () {
         document.querySelector('.list2-start').innerText = document.querySelector('.list2-start').innerText + this.innerText;
     });
 });
+
+/*
+function fun1 () {
+    let chbox;
+    chebox = this.document.getElementsByClassName('.l2i');
+    if (chbox.checked) {
+		alert('Выбран');
+	}
+	else {
+		alert ('Не выбран');
+	}
+};*/
